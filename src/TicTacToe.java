@@ -4,6 +4,18 @@ import java.util.*;
 import javax.swing.*;
 
 public class TicTacToe implements ActionListener{
+    //Field
+
+    Random random = new Random();
+    JFrame frame = new JFrame();
+    JPanel title_panel = new JPanel();
+    JPanel button_panel = new JPanel();
+    JLabel textfield = new JLabel();
+    JButton[] buttons = new JButton[9]; //Need 9 buttons
+    boolean player1_turn;
+
+
+
     //constructor
     TicTacToe(){
 
