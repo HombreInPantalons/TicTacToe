@@ -60,6 +60,13 @@ public class TicTacToe implements ActionListener{
     }
 
     public void firstTurn(){
+        //Pas na 2 seconden zal dit zichtbaar worden, zodat men de titel nog kan zien bij starten.
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+
         if(random.nextInt(2)== 0){
             player1_turn = true;
             textfield.setText("X turn");
